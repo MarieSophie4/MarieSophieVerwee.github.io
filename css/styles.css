@@ -92,20 +92,21 @@
     /* color-1(#5F9295)
      * color-2(#2D2327)
      */
-    --color-1                      : hsla(183, 22%, 48%, 1);
-    --color-2                      : hsla(336, 13%, 16%, 1);
+    --color-1                      : hsla(72, 24%, 67%,1); 
+    /* hsla(183, 22%, 48%, 1); */
+    --color-2                      : hsla(132, 51%, 15%,1);
 
     /* theme color variations
      */
-    --color-1-lighter              : hsla(183, 22%, 68%, 1);
-    --color-1-light                : hsla(183, 22%, 58%, 1);
-    --color-1-dark                 : hsla(183, 22%, 38%, 1);
-    --color-1-darker               : hsla(183, 22%, 28%, 1);
+    --color-1-lighter              : hsla(72, 24%, 67%,1); 
+    --color-1-light                : hsla(72, 24%, 58%,1); 
+    --color-1-dark                 : hsla(72, 24%, 38%,1); 
+    --color-1-darker               : hsla(72, 24%, 28%,1); 
 
-    --color-2-lighter              : hsla(336, 13%, 36%, 1);
-    --color-2-light                : hsla(336, 13%, 26%, 1);
-    --color-2-dark                 : hsla(336, 13%, 10%, 1);
-    --color-2-darker               : hsla(336, 13%, 5%, 1);
+    --color-2-lighter              : hsla(132, 51%, 36%, 1);
+    --color-2-light                : hsla(132, 51%, 26%, 1);
+    --color-2-dark                 : hsla(132, 51%, 10%, 1);
+    --color-2-darker               : hsla(132, 51%, 5%, 1);
 
     /* feedback colors
      * color-error(#ffd1d2), color-success(#c8e675), 
@@ -158,8 +159,8 @@
      */
     --color-btn                    : var(--color-gray-4);
     --color-btn-text               : var(--color-text);
-    --color-btn-hover              : var(--color-gray-5);
-    --color-btn-hover-text         : var(--color-text);
+    --color-btn-hover              : white;
+    --color-btn-hover-text         : white;
     --color-btn-primary            : var(--color-1-dark);
     --color-btn-primary-text       : var(--color-white);
     --color-btn-primary-hover      : var(--color-text-dark);
@@ -171,13 +172,13 @@
 
     /* preloader
      */
-    --color-preloader-bg           : #CFE6E8;
+    --color-preloader-bg           : hsla(72, 24%, 67%,1);
     --color-loader                 : var(--color-text-dark);
     --color-loader-light           : var(--color-1-lighter);
 
     /* others
      */
-    --color-body                   : #e8cfcf;
+    --color-body                   : hsla(72, 24%, 67%,1);
     --color-border                 : rgba(0, 0, 0, .08);
     --border-radius                : 3px;
 }
@@ -1314,7 +1315,7 @@ a {
 a:focus,
 a:hover,
 a:active {
-    color : var(--color-2-lighter);
+    color : white ;
 }
 
 a:hover,
@@ -2951,7 +2952,7 @@ img.u-pull-left {
 
 .s-header__nav a:focus,
 .s-header__nav a:hover {
-    color : var(--color-1);
+    color : white;
 }
 
 .s-header__nav ul {
@@ -3198,6 +3199,7 @@ img.u-pull-left {
     padding-top : calc(9.5 * var(--space));
     width       : 100%;
     position    : relative;
+    height      : 100vh;
 }
 
 .s-intro__content {
@@ -3245,9 +3247,9 @@ img.u-pull-left {
  * -------------------------------------------------------------------- */
 .s-intro__bg {
     aspect-ratio        : 1/1;
-    width               : 100%;
+    width               : 50%;
     background-color    : var(--color-gray-4);
-    background-image    : url(../images/intro-bg.jpg);
+    background-image    : url(../images/intro-bg-ms.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
