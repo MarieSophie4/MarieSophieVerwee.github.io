@@ -1,32 +1,23 @@
-name: Deploy to GitHub Pages
-
+name: Build and Deploy
 on:
   push:
     branches:
-      - main  # Change this to the branch you want to deploy
-
+      - master
 jobs:
-  deploy:
+  build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
+    - uses: actions/checkout@v3
+    - name: All things angular
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@1 ## replace by latest version without it you will see Expected format {org}/{repo}[/path]@ref. Actual 'AhsanAyaz/angular-deploy-gh-pages-actions',Input string was not in a correct format.
       with:
-        node-version: 20.11.0
+        github_access_token: ${{ secrets.TOKEN }} # see the Configuration section for how you can create secrets
+        build_configuration: development # The build environment for the app. please look configurations in your angular.json
+        base_href: https://MarieSophieVerwee.github.io/  # make sure this corresponds to https://<your_username>.github.io/<base_href>/
+        deploy_branch: gh-pages # The branch the action should deploy to.
+        angular_dist_build_folder: dist/website # The folder where your project is supposed to be after running ng build by the action.
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build Angular app
-      run: npm run build --prod
-
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
-      with:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
-        BRANCH: main
-        FOLDER: dist/website
+permissions:
+  contents: write # Allow write permission to GITHUB_TOKEN to commit to deploy branch.
