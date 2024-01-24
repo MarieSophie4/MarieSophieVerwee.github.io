@@ -1,0 +1,18 @@
+{
+  "app" : {
+    "name" : "Marie-Sophie",
+    "job" : "Software Engineer"
+  },
+  "header": {
+    "intro" : "Intro",
+    "about" : "Over",
+    "works" : "Werken",
+    "contact" : "Contact"
+  },
+  "about": {
+    "about-me" : "Over mij",
+    "full-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "
+  }    
+  
+}
+  
