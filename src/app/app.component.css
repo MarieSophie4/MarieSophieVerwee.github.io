@@ -1,0 +1,22 @@
+
+
+/* make the content of the page spread to at least the full capacity */
+.full-page  {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+    height: 100px;
+}
+
+router-outlet {
+    /* margin-top: 100px; */
+/* You can add global styles to this file, and also import other style files */
+
+  padding-top: 100px;
+  margin: 0;
+}
+

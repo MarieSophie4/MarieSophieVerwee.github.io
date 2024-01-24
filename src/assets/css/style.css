@@ -2901,21 +2901,24 @@
  }
  
  .s-header__block {
-     z-index : 101;
+    z-index : 101;
+    display: flex;
+    align-items: center;
+    margin-left: 30px
  }
  
  /* --------------------------------------------------------------------
   * ## branding
   * -------------------------------------------------------------------- */
  .s-header__branding {
-     z-index        : 2;
+     /* z-index        : 2; */
      font-family    : var(--font-2);
      font-size      : 3rem;
      line-height    : 1;
      letter-spacing : -0.03em;
-     transform      : translateY(-50%);
-     position       : absolute;
-     top            : 50%;
+     /* transform      : translateY(-50%); */
+     /* position       : absolute; */
+     /* top            : 5%; */
      left           : 3.6rem;
  }
  
@@ -3196,8 +3199,7 @@
   *
   * ------------------------------------------------------------------- */
  .s-intro {
-     padding-top : calc(9.5 * var(--space));
-     width       : 100%;
+     /* width       : 100%; */
      position    : relative;
      height      : 100vh;
  }
@@ -3233,13 +3235,14 @@
  }
  
  .s-intro__text-huge {
-     --text-huge-size : 14.6rem;
+     --text-huge-size : 11.5rem;
      font-size        : var(--text-huge-size);
      line-height      : 1;
      letter-spacing   : -0.015em;
-     margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
+     /* margin-top       : calc(var(--text-huge-size) / 2 * -1.2); */
      margin-bottom    : var(--vspace-1_25);
      color            : white;
+     margin-top: 60px;
  }
  
  /* --------------------------------------------------------------------
@@ -3247,7 +3250,7 @@
   * -------------------------------------------------------------------- */
  .s-intro__bg {
      aspect-ratio        : 1/1;
-     width               : 50%;
+     width               : 40%;
      background-color    : var(--color-gray-4);
      background-image    : url(../images/intro-bg-ms.jpg);
      background-repeat   : no-repeat;
@@ -4161,9 +4164,10 @@
  }
  
  .personal-about {
-     padding-top: 300px;
+     padding-top: 100px;
  }
  
  .ms_margin {
-     margin-left: 50%;
- }
+     margin-left: 60%;
+    margin-top: 70px
+    }
