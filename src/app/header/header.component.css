@@ -4,8 +4,26 @@
     height: 100px;
     display: inline-flex;
     position: absolute;
-    width: 100%
+    width: 100%;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01),
+    0 2px 2px rgba(0, 0, 0, 0.01),
+    0 6px 6px rgba(0, 0, 0, 0.01);
 }
+
+/* Show the menu when isMenuVisible is true */
+.fixed-menu.show {
+    display: block;
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+
+}
+
+/* Toggle button styles */
+button {
+    display: block; /* Ensure the button is a block element */
+    margin-bottom: 10px; /* Add spacing between button and menu */
+  }
 
 .center {
     position: absolute;
@@ -16,3 +34,13 @@
     width: 100px;
     height: 100px;
 }
+
+.menu-is-open-dropdown {
+    margin-top: 100px;
+    background-color: hsla(72, 24%, 67%,1);
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-top: 40px;
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+

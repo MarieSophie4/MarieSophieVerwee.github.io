@@ -1,16 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component, Output, EventEmitter } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'header',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
   /** Emit the changed language to the app component file */
   @Output() languageEmitter : EventEmitter<string> = new EventEmitter<string>();
+  isMenuVisible = false;
 
     /**
    * Function triggered by language change in html dropdown
@@ -18,5 +20,10 @@ export class HeaderComponent {
    */
     languageChange(lang :  string){
       this.languageEmitter.emit(lang);
+    }
+
+
+    toggleMenu() {
+      this.isMenuVisible = !this.isMenuVisible;
     }
 }

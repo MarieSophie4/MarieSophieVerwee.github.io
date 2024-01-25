@@ -10,13 +10,19 @@
 
 header {
     height: 100px;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-body);
+  z-index: 1000;
+
 }
 
 router-outlet {
     /* margin-top: 100px; */
 /* You can add global styles to this file, and also import other style files */
 
-  padding-top: 100px;
+  margin-top: 150px;
   margin: 0;
+  position: fixed;
 }
-

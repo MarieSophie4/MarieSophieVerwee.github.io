@@ -21,7 +21,7 @@ export class AppComponent implements AfterViewInit {
     ) {}
 
   ngAfterViewInit() {
-   this.ts.setDefaultLang('en')
+   this.ts.setDefaultLang('nl')
   }
 
   /**
