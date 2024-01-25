@@ -617,7 +617,7 @@
  .column {
      display : block;
      flex    : 1 1 0%;
-     padding : 0 var(--gutter);
+     /* padding : 0 var(--gutter); */
  }
  
  .collapse>.column,
@@ -1316,11 +1316,13 @@
  a:hover,
  a:active {
      color : white ;
- }
+     cursor: pointer;
+    }
  
  a:hover,
  a:active {
      outline : 0;
+     cursor: pointer;
  }
  
  /* headings
@@ -3007,11 +3009,12 @@
   * -------------------------------------------------------------------- */
  .s-header__menu-toggle {
      display  : none;
-     width    : 6.8rem;
-     height   : var(--header-height);
+     width    : 50px;
+     height   : 50px;
      position : absolute;
-     top      : 0;
+     /* top      : 0; */
      right    : 1.6rem;
+    
  }
  
  .s-header__menu-toggle span {
@@ -3108,8 +3111,8 @@
          width            : 100%;
          height           : var(--header-height);
          background-color : var(--color-body);
-         border-bottom    : 1px solid var(--color-border);
-         box-shadow       : var(--box-shadow);
+         /* border-bottom    : 1px solid var(--color-border); */
+         /* box-shadow       : var(--box-shadow); */
      }
  
      .s-header__branding {
@@ -3280,13 +3283,13 @@
   * ------------------------------------------------------------------- */
  @media screen and (max-width: 1400px) {
      .s-intro__text-huge {
-         --text-huge-size : 22rem;
+         --text-huge-size : 10rem;
      }
  }
  
  @media screen and (max-width: 1200px) {
      .s-intro__text-huge {
-         --text-huge-size : 18vw;
+         --text-huge-size : 8rem;
      }
  }
  
@@ -4171,3 +4174,15 @@
      margin-left: 60%;
     margin-top: 70px
     }
+
+    @media screen and (max-width: 900px) {
+        .ms_margin {
+            margin-left: 0px;
+            margin-top: 275px;
+            width: 100%;
+        }
+    }  
+
+.format-blocks {
+    margin-top: 120px;
+}
