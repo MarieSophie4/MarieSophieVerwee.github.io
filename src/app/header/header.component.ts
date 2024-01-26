@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, Output, EventEmitter } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { Component, Output, EventEmitter, Input, OnInit, OnChanges } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Languages } from '../@shared/language.enum';
 
 @Component({
   selector: 'header',
@@ -9,21 +10,38 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent  {
   /** Emit the changed language to the app component file */
-  @Output() languageEmitter : EventEmitter<string> = new EventEmitter<string>();
+  @Output() languageEmitter: EventEmitter<string> = new EventEmitter<string>();
+  currentLanguage: string = '';
+  public languages = Object.values(Languages).filter(value => typeof value === 'string');;
+
   isMenuVisible = false;
+  public showHideName:boolean = false;
 
-    /**
-   * Function triggered by language change in html dropdown
-   * @param lang chosen language
-   */
-    languageChange(lang :  string){
-      this.languageEmitter.emit(lang);
-    }
+  constructor(private translate: TranslateService) { }
+  /**
+ * Function triggered by language change in html dropdown
+ * @param lang chosen language
+ */
+  onLanguageChange(lang: any) {
+    const selectedLanguage: string = (lang.target as HTMLSelectElement).value;
+    console.log(selectedLanguage)
+    this.languageEmitter.emit(selectedLanguage.toLowerCase());
+
+    this.translate.use(selectedLanguage.toLowerCase())
+  }
+
+  ngOnInit() {
+    this.currentLanguage = this.translate.currentLang.toUpperCase()
+    console.log(this.translate.currentLang)
+  }
 
 
-    toggleMenu() {
-      this.isMenuVisible = !this.isMenuVisible;
-    }
+
+
+  toggleMenu() {
+    this.isMenuVisible = !this.isMenuVisible;
+  }
+
 }

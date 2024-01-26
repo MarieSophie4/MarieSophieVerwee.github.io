@@ -1,6 +1,6 @@
 /** Enum of the possible languages */
 export enum Languages {
-    FR,
+    // FR,
     NL,
     EN
   }

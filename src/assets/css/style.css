@@ -167,7 +167,7 @@
      --color-btn-primary-hover-text : var(--color-white);
      --color-btn-stroke             : var(--color-1-dark);
      --color-btn-stroke-text        : var(--color-1-darker);
-     --color-btn-stroke-hover       : var(--color-text-dark);
+     --color-btn-stroke-hover       : #242526;
      --color-btn-stroke-hover-text  : var(--color-white);
  
      /* preloader
@@ -536,6 +536,8 @@
  video {
      max-width : 100%;
      height    : auto;
+     width: 30px;
+     height: 30px;
  }
  
  pre {
@@ -2983,6 +2985,7 @@
      position   : absolute;
      top        : calc(50% - .2rem);
      right      : 3.6rem;
+     align-items: center;
  }
  
  .s-header__social li {
@@ -3639,7 +3642,7 @@
   *
   * ------------------------------------------------------------------- */
  .s-works {
-     padding-top      : calc(6 * var(--space));
+     padding-top      : 40px;
      padding-bottom   : calc(5.5 * var(--space));
      background-color : white;
  }
@@ -3753,7 +3756,7 @@
  
  /* on hover
   */
- .folio-item__thumb:hover .folio-item__thumb-link img {
+ /* .folio-item__thumb:hover .folio-item__thumb-link img {
      transform : scale(1.05);
  }
  
@@ -3766,7 +3769,7 @@
      opacity    : 1;
      visibility : visible;
      transform  : scale(1);
- }
+ } */
  
  /* ------------------------------------------------------------------- 
   * ## testimonial slider

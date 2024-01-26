@@ -3,3 +3,17 @@
 .padding {
     padding-top: 100px;
 }
+
+.right {
+    justify-content: end;
+}
+
+.text-svg-combo {
+    padding-right: 15px;
+}
+
+.pointer:hover,
+.pointer:active {
+    outline : 0;
+    cursor: pointer;
+}

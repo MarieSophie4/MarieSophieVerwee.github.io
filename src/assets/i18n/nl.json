@@ -11,7 +11,9 @@
   },
   "about": {
     "about-me" : "Over mij",
-    "full-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "
+    "full-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+    "hobbies" :"Enkele toffe hobbies, naast het werk"
+
   }    
   
 }

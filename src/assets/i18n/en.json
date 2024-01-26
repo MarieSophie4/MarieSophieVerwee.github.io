@@ -11,8 +11,8 @@
   },
   "about": {
     "about-me" : "About me",
-    "full-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" 
-
+    "full-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "hobbies" :"Some things I like to do next to working"
   }  
   
 }
