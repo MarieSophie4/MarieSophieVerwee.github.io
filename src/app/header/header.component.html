@@ -90,7 +90,7 @@
         <li class="language-toggle">
 
             <select (change)="onLanguageChange($event)" class="btn btn--stroke language-toggle">
-                <option *ngFor="let l of languages"  [value]="l">
+                <option *ngFor="let l of languages" [value]="l" [selected]="l === currentLanguage">
                     {{ l }}
                 </option>
             </select>
