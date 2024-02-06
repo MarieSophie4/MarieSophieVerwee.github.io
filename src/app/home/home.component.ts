@@ -13,10 +13,13 @@ import { Router } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  constructor(private router: Router,) {}
+  constructor(private router: Router) {}
 
   changePage() {
     // Navigate to the desired route when the div is clicked
-    this.router.navigateByUrl('/about')
+    this.router.navigateByUrl('/about').then(() => {
+      // Scroll to the top of the page
+      window.scrollTo(0, 0);
+    });
   }
 }

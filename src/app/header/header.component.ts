@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Output, EventEmitter, Input, OnInit, OnChanges } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Languages } from '../@shared/language.enum';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header',
@@ -19,7 +20,7 @@ export class HeaderComponent  {
   isMenuVisible = false;
   public showHideName:boolean = false;
 
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService, private router: Router) { }
   /**
  * Function triggered by language change in html dropdown
  * @param lang chosen language
@@ -37,11 +38,13 @@ export class HeaderComponent  {
     console.log(this.translate.currentLang)
   }
 
-
-
-
   toggleMenu() {
     this.isMenuVisible = !this.isMenuVisible;
+  }
+
+  onRouterChange(path : string){
+    this.router.navigateByUrl(path)
+
   }
 
 }

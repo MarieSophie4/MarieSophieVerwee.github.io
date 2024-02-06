@@ -2,7 +2,7 @@
     <div class="s-header__block ">
         <div class="s-header__branding ">
             <p class="site-title">
-                <a href="*" rel="home">Marie-Sophie</a>
+                <a (click)="onRouterChange('/')" rel="home">Marie-Sophie</a>
             </p>
         </div>
 
@@ -13,19 +13,17 @@
             (click)="toggleMenu()">
             <span>Menu</span>
         </a>
-
-
-
     </div>
 
     <!-- Menu to different pages -->
     <div class="row s-header__nav-wrap center">
         <nav class="s-header__nav">
             <ul>
-                <li class="current"><a href="intro" class="smoothscroll">{{ 'header.intro' | translate }}</a></li>
-                <li><a href="about" class="smoothscroll">{{ 'header.about' | translate }}</a></li>
-                <li><a href="wokrks" class="smoothscroll">{{ 'header.works' | translate }}</a></li>
-                <li><a href="contact" class="smoothscroll">{{ 'header.contact' | translate }}</a></li>
+                <li><a (click)="onRouterChange('/intro')" class="smoothscroll">{{ 'header.intro' | translate }}</a></li>
+                <li><a (click)="onRouterChange('/about')" class="smoothscroll">{{ 'header.about' | translate }}</a></li>
+                <li><a (click)="onRouterChange('/works')" class="smoothscroll">{{ 'header.works' | translate }}</a></li>
+                <li><a (click)="onRouterChange('/contact')" class="smoothscroll">{{ 'header.contact' | translate }}</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -80,10 +78,10 @@
 
     <nav class="s-header__nav">
         <ul>
-            <li class="current"><a href="intro" class="smoothscroll">{{ 'header.intro' | translate }}</a></li>
-            <li><a href="about" class="smoothscroll">{{ 'header.about' | translate }}</a></li>
-            <li><a href="wokrks" class="smoothscroll">{{ 'header.works' | translate }}</a></li>
-            <li><a href="contact" class="smoothscroll">{{ 'header.contact' | translate }}</a></li>
+            <li><a (click)="onRouterChange('/intro')" class="smoothscroll">{{ 'header.intro' | translate }}</a></li>
+            <li><a (click)="onRouterChange('/about')" class="smoothscroll">{{ 'header.about' | translate }}</a></li>
+            <li><a (click)="onRouterChange('/works')" class="smoothscroll">{{ 'header.works' | translate }}</a></li>
+            <li><a (click)="onRouterChange('/contact')" class="smoothscroll">{{ 'header.contact' | translate }}</a></li>
         </ul>
     </nav>
     <ul class="s-header__social">

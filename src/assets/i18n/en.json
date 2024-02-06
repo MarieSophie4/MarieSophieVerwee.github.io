@@ -12,8 +12,14 @@
   "about": {
     "about-me" : "About me",
     "full-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-    "hobbies" :"Some things I like to do next to working"
-  }  
+    "hobbies" :"Some things I like to do next to working Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis ac nisl eu sollicitudin. Suspendisse molestie mi quis enim placerat, sed ultricies risus dapibus. Nam volutpat nec dui eu bibendum. Donec nec pellentesque nisi, quis dapibus nunc. Aenean magna metus, lobortis eget odio et, volutpat fermentum enim. Maecenas sem turpis, finibus at elementum sed, congue vel lorem. Nulla nisl dui, pretium ut lorem feugiat, ultrices interdum ex. Phasellus vel neque sed neque consectetur malesuada.",
+    "running" : "Running",
+    "running-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis ac nisl eu sollicitudin. Suspendisse molestie mi quis enim placerat, sed ultricies risus dapibus. Nam volutpat nec dui eu bibendum. Donec nec pellentesque nisi, quis dapibus nunc. Aenean magna metus, lobortis eget odio et, volutpat fermentum enim. Maecenas sem turpis, finibus at elementum sed, congue vel lorem. Nulla nisl dui, pretium ut lorem feugiat, ultrices interdum ex. Phasellus vel neque sed neque consectetur malesuada.",
+    "baking" : "Baking",
+    "baking-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis ac nisl eu sollicitudin. Suspendisse molestie mi quis enim placerat, sed ultricies risus dapibus. Nam volutpat nec dui eu bibendum. Donec nec pellentesque nisi, quis dapibus nunc. Aenean magna metus, lobortis eget odio et, volutpat fermentum enim. Maecenas sem turpis, finibus at elementum sed, congue vel lorem. Nulla nisl dui, pretium ut lorem feugiat, ultrices interdum ex. Phasellus vel neque sed neque consectetur malesuada.",
+    "travelling" : "Travelling",
+    "travelling-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis ac nisl eu sollicitudin. Suspendisse molestie mi quis enim placerat, sed ultricies risus dapibus. Nam volutpat nec dui eu bibendum. Donec nec pellentesque nisi, quis dapibus nunc. Aenean magna metus, lobortis eget odio et, volutpat fermentum enim. Maecenas sem turpis, finibus at elementum sed, congue vel lorem. Nulla nisl dui, pretium ut lorem feugiat, ultrices interdum ex. Phasellus vel neque sed neque consectetur malesuada."
+  }   
   
 }
-  
+   

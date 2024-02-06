@@ -619,6 +619,7 @@
  .column {
      display : block;
      flex    : 1 1 0%;
+     width: 25%;
      /* padding : 0 var(--gutter); */
  }
  
@@ -3651,8 +3652,9 @@
   * ## portfolio list
   * ------------------------------------------------------------------- */
  .folio-list {
-     margin-top    : var(--vspace-2_5);
-     margin-bottom : var(--vspace-2);
+     /* margin-top    : var(--vspace-2_5); */
+     /* margin-bottom : var(--vspace-2); */
+     width: 25%;
  }
  
  .folio-list .column {
