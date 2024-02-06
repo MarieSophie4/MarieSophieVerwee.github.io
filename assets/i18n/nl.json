@@ -11,7 +11,15 @@
   },
   "about": {
     "about-me" : "Over mij",
-    "full-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "
+    "full-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+    "hobbies" :"Enkele toffe hobbies, naast het werk Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis ac nisl eu sollicitudin. Suspendisse molestie mi quis enim placerat, sed ultricies risus dapibus. Nam volutpat nec dui eu bibendum. Donec nec pellentesque nisi, quis dapibus nunc. Aenean magna metus, lobortis eget odio et, volutpat fermentum enim. Maecenas sem turpis, finibus at elementum sed, congue vel lorem. Nulla nisl dui, pretium ut lorem feugiat, ultrices interdum ex. Phasellus vel neque sed neque consectetur malesuada.",
+    "running" : "Lopen",
+    "running-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis ac nisl eu sollicitudin. Suspendisse molestie mi quis enim placerat, sed ultricies risus dapibus. Nam volutpat nec dui eu bibendum. Donec nec pellentesque nisi, quis dapibus nunc. Aenean magna metus, lobortis eget odio et, volutpat fermentum enim. Maecenas sem turpis, finibus at elementum sed, congue vel lorem. Nulla nisl dui, pretium ut lorem feugiat, ultrices interdum ex. Phasellus vel neque sed neque consectetur malesuada.",
+    "baking" : "Bakken",
+    "baking-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis ac nisl eu sollicitudin. Suspendisse molestie mi quis enim placerat, sed ultricies risus dapibus. Nam volutpat nec dui eu bibendum. Donec nec pellentesque nisi, quis dapibus nunc. Aenean magna metus, lobortis eget odio et, volutpat fermentum enim. Maecenas sem turpis, finibus at elementum sed, congue vel lorem. Nulla nisl dui, pretium ut lorem feugiat, ultrices interdum ex. Phasellus vel neque sed neque consectetur malesuada.",
+    "travelling" : "Reizen",
+    "travelling-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis ac nisl eu sollicitudin. Suspendisse molestie mi quis enim placerat, sed ultricies risus dapibus. Nam volutpat nec dui eu bibendum. Donec nec pellentesque nisi, quis dapibus nunc. Aenean magna metus, lobortis eget odio et, volutpat fermentum enim. Maecenas sem turpis, finibus at elementum sed, congue vel lorem. Nulla nisl dui, pretium ut lorem feugiat, ultrices interdum ex. Phasellus vel neque sed neque consectetur malesuada."
+
   }    
   
 }
